@@ -68,6 +68,9 @@ RUN apt-get install -y libmemcached-dev zlib1g-dev \
     && pecl install memcached-2.2.0 \
     && docker-php-ext-enable memcached
 
+# php options (ssmtp)
+RUN apt-get install -y ssmtp mailutils
+
 # cleanup
 RUN apt-get -y autoremove \
     && apt-get clean all \
@@ -81,5 +84,4 @@ RUN curl -sS https://getcomposer.org/installer | php \
 WORKDIR /var/www/
 RUN usermod -u 500 www-data \
     && groupmod -g 500 www-data
-
 
