@@ -11,7 +11,8 @@
 * 画像を扱うためのツールインストール  
 ※ libfreetype6-dev libjpeg62-turbo-dev libpng12-dev libmcrypt-dev
 * PHPのオプションを追加  
-※ docker-php-ext-install pdo_mysql mysqli mbstring gd iconv mcrypt zip xml
+※ docker-php-ext-install gd exif gmp mysql mysqli pdo_mysql pdo_pgsql pgsql dba mcrypt zip bz2 soap sockets xsl bcmath calendar pcntl wddx gettext opcache tidy
+* memcached enabled
 * php-composerインストール
 
 ### 使い方 ###

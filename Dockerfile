@@ -60,7 +60,7 @@ RUN echo "Installing PHP extensions(imap)" \
 #
 RUN echo "Installing PHP extensions" \
     && docker-php-ext-install \
-       mysqli pdo_mysql pdo_pgsql pgsql dba mcrypt zip bz2 soap sockets xsl \
+       mysql mysqli pdo_mysql pdo_pgsql pgsql dba mcrypt zip bz2 soap sockets xsl \
        bcmath calendar pcntl wddx gettext opcache tidy
 
 # php options (Memcached)
