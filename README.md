@@ -29,7 +29,7 @@ $ docker run --rm -u "www-data" -it php bash
 下記のコマンドにてソースのダウンロードとイメージの構築を実行します。
 
 ```
-$ git clone git@bitbucket.org:reflet/docker-debian8-php56.git .
+$ git clone https://github.com/reflet/docker-debian-php56.git .
 $ docker build -t reflet/debian8-php56 .
 $ docker login
 $ docker tag reflet/debian8-php56 reflet/debian8-php56:{タグ}
