@@ -71,6 +71,9 @@ RUN apt-get install -y libmemcached-dev zlib1g-dev \
 # php options (ssmtp)
 RUN apt-get install -y ssmtp mailutils
 
+# php options (x-debug)
+RUN pecl install xdebug
+
 # cleanup
 RUN apt-get -y autoremove \
     && apt-get clean all \
